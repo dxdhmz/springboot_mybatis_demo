@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.tTestMapper">
+  <resultMap id="BaseResultMap" type="com.example.demo.model.tTest">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="CHAR" property="name" />
+    <result column="author" jdbcType="CHAR" property="author" />
+  </resultMap>
+
+  <select id="SelById" resultType="com.example.demo.model.tTest">
+    select * from t_test where id = #{id}
+  </select>
+
+  <select id="SelByName" resultType="com.example.demo.model.tTest">
+    select * from t_test where name = #{name}
+  </select>
+</mapper>
