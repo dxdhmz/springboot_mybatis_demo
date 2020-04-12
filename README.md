@@ -1,0 +1,2 @@
+# springboot_mybatis_demo
+springboot+mybatis的一个简单demo，使用IDEA搭建
